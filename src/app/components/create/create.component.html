@@ -1,0 +1,31 @@
+<div class="row">
+    <form class="col-md-10" #useForm="ngForm" (ngSubmit)="onSubmit()">
+        <fieldset>
+            <div class="form-group">
+                <label for="nombre">Artista</label>
+                <input 
+                    type="text" 
+                    class="form-control" 
+                    id="nombre" 
+                    name="nombre" 
+                    #nombre="ngModel" 
+                    [(ngModel)] ="datos.nombre"
+                    placeholder="Nombre de cancion"
+                >
+            </div>
+            <div class="form-group">
+                <label for="artista">Password</label>
+                <input 
+                    type="text" 
+                    class="form-control" 
+                    id="artista" 
+                    name="artista" 
+                    #artista="ngModel" 
+                    [(ngModel)] ="datos.artista"
+                    placeholder="Artista">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+    </form>
+</div>

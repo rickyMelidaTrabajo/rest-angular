@@ -1,0 +1,18 @@
+<div class="container">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Artista</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-info" *ngFor="let song of cancion">
+                <th>{{song._id}}</th>
+                <td>{{song.nombre}}</td>
+                <td>{{song.artista}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
